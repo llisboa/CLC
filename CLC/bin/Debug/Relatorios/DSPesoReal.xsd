@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="NewDataSet" msprop:Generator_DataSetName="NewDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Consulta" msprop:Generator_UserTableName="Consulta" msprop:Generator_RowDeletedName="ConsultaRowDeleted" msprop:Generator_RowChangedName="ConsultaRowChanged" msprop:Generator_RowClassName="ConsultaRow" msprop:Generator_RowChangingName="ConsultaRowChanging" msprop:Generator_RowEvArgName="ConsultaRowChangeEvent" msprop:Generator_RowEvHandlerName="ConsultaRowChangeEventHandler" msprop:Generator_TableClassName="ConsultaDataTable" msprop:Generator_TableVarName="tableConsulta" msprop:Generator_RowDeletingName="ConsultaRowDeleting" msprop:Generator_TablePropName="Consulta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VENDA" msprop:Generator_UserColumnName="VENDA" msprop:Generator_ColumnVarNameInTable="columnVENDA" msprop:Generator_ColumnPropNameInRow="VENDA" msprop:Generator_ColumnPropNameInTable="VENDAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM" msprop:Generator_UserColumnName="ITEM" msprop:Generator_ColumnVarNameInTable="columnITEM" msprop:Generator_ColumnPropNameInRow="ITEM" msprop:Generator_ColumnPropNameInTable="ITEMColumn" type="xs:decimal" />
+              <xs:element name="PRODUTO" msprop:Generator_UserColumnName="PRODUTO" msprop:Generator_ColumnVarNameInTable="columnPRODUTO" msprop:Generator_ColumnPropNameInRow="PRODUTO" msprop:Generator_ColumnPropNameInTable="PRODUTOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DIMENSAO_x0020__x002F__x0020_QUALIDADE" msprop:Generator_UserColumnName="DIMENSAO / QUALIDADE" msprop:Generator_ColumnVarNameInTable="_columnDIMENSAO___QUALIDADE" msprop:Generator_ColumnPropNameInRow="_DIMENSAO___QUALIDADE" msprop:Generator_ColumnPropNameInTable="_DIMENSAO___QUALIDADEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="137" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LIQUIDO" msprop:Generator_UserColumnName="LIQUIDO" msprop:Generator_ColumnVarNameInTable="columnLIQUIDO" msprop:Generator_ColumnPropNameInRow="LIQUIDO" msprop:Generator_ColumnPropNameInTable="LIQUIDOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BRUTO" msprop:Generator_UserColumnName="BRUTO" msprop:Generator_ColumnVarNameInTable="columnBRUTO" msprop:Generator_ColumnPropNameInRow="BRUTO" msprop:Generator_ColumnPropNameInTable="BRUTOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_UNITARIO" msprop:Generator_UserColumnName="VALOR_UNITARIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_UNITARIO" msprop:Generator_ColumnPropNameInRow="VALOR_UNITARIO" msprop:Generator_ColumnPropNameInTable="VALOR_UNITARIOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EMBARCADO" msprop:Generator_UserColumnName="EMBARCADO" msprop:Generator_ColumnVarNameInTable="columnEMBARCADO" msprop:Generator_ColumnPropNameInRow="EMBARCADO" msprop:Generator_ColumnPropNameInTable="EMBARCADOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_TOTAL" msprop:Generator_UserColumnName="VALOR_TOTAL" msprop:Generator_ColumnVarNameInTable="columnVALOR_TOTAL" msprop:Generator_ColumnPropNameInRow="VALOR_TOTAL" msprop:Generator_ColumnPropNameInTable="VALOR_TOTALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VOLUMES" msprop:Generator_UserColumnName="VOLUMES" msprop:Generator_ColumnVarNameInTable="columnVOLUMES" msprop:Generator_ColumnPropNameInRow="VOLUMES" msprop:Generator_ColumnPropNameInTable="VOLUMESColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CFOP" msprop:Generator_UserColumnName="CFOP" msprop:Generator_ColumnVarNameInTable="columnCFOP" msprop:Generator_ColumnPropNameInRow="CFOP" msprop:Generator_ColumnPropNameInTable="CFOPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CARREGAMENTO" msprop:Generator_UserColumnName="CARREGAMENTO" msprop:Generator_ColumnVarNameInTable="columnCARREGAMENTO" msprop:Generator_ColumnPropNameInRow="CARREGAMENTO" msprop:Generator_ColumnPropNameInTable="CARREGAMENTOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_LOGOTIPO" msprop:Generator_UserColumnName="_LOGOTIPO" msprop:Generator_ColumnVarNameInTable="column_LOGOTIPO" msprop:Generator_ColumnPropNameInRow="_LOGOTIPO" msprop:Generator_ColumnPropNameInTable="_LOGOTIPOColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

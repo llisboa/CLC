@@ -1,0 +1,1758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64CC12E1-A0AD-4394-BFF6-F4C8DBC34278}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CLC.My.MyApplication</StartupObject>
+    <RootNamespace>CLC</RootNamespace>
+    <AssemblyName>CLC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Resources\CLC96x96.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>0DD1B2DEFF140F0E95DBA55BB80FBD5087FFD756</ManifestCertificateThumbprint>
+    <ManifestKeyFile>CLC_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <PublishUrl>C:\PACOTE\CLC\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>HTTP://WWW2.INTERMESA.COM.BR/DOWN/CLC/</UpdateUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>Controle e Logística Comercial</ProductName>
+    <PublisherName>CLC Controle e Logística Comercial</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>02.66.00.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CLC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CLC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Icraft, Version=15.29.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342" />
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86" />
+    <Reference Include="System.Data.Services">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajuda\SobreSistema.Designer.vb">
+      <DependentUpon>SobreSistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ajuda\SobreSistema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Apl.vb" />
+    <Compile Include="Armazem\frmVolumesDimensaoNCM.designer.vb">
+      <DependentUpon>frmVolumesDimensaoNCM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmVolumesDimensaoNCM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmCargaDataSets.designer.vb">
+      <DependentUpon>frmCargaDataSets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmCargaDataSets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmPosicaoRocha.designer.vb">
+      <DependentUpon>frmPosicaoRocha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmPosicaoRocha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmEstoqueAgrupado.designer.vb">
+      <DependentUpon>frmEstoqueAgrupado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmEstoqueAgrupado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmPedidoViagem.designer.vb">
+      <DependentUpon>frmPedidoViagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmPedidoViagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmConfItemEmb.Designer.vb">
+      <DependentUpon>frmConfItemEmb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmConfItemEmb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\frmEstoqueVendedor.designer.vb">
+      <DependentUpon>frmEstoqueVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\frmEstoqueVendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\frmVendedorPorCliente.designer.vb">
+      <DependentUpon>frmVendedorPorCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\frmVendedorPorCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\frmEstoqueEstat.designer.vb">
+      <DependentUpon>frmEstoqueEstat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\frmEstoqueEstat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\frmEstoquePed.designer.vb">
+      <DependentUpon>frmEstoquePed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\frmEstoquePed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\frmEstoqueDina.designer.vb">
+      <DependentUpon>frmEstoqueDina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\frmEstoqueDina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmDimensoesPorPecas.designer.vb">
+      <DependentUpon>frmDimensoesPorPecas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmDimensoesPorPecas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmFracionar.designer.vb">
+      <DependentUpon>frmFracionar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmFracionar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmGridEtiq.designer.vb">
+      <DependentUpon>frmGridEtiq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmGridEtiq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\frmOrdemVenda.Designer.vb">
+      <DependentUpon>frmOrdemVenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\frmOrdemVenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\frmPesquisas.Designer.vb">
+      <DependentUpon>frmPesquisas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\frmPesquisas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmCarregamentos.Designer.vb">
+      <DependentUpon>frmCarregamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmCarregamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmCarregaOrdem.designer.vb">
+      <DependentUpon>frmCarregaOrdem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmCarregaOrdem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmMensagens.Designer.vb">
+      <DependentUpon>frmMensagens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmMensagens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmPendencias.Designer.vb">
+      <DependentUpon>frmPendencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmPendencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmPontoColetaComViagem.designer.vb">
+      <DependentUpon>frmPontoColetaComViagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmPontoColetaComViagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmResumoCarrega.designer.vb">
+      <DependentUpon>frmResumoCarrega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmResumoCarrega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmEntregaCliente.designer.vb">
+      <DependentUpon>frmEntregaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmEntregaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmPontoColeta.designer.vb">
+      <DependentUpon>frmPontoColeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmPontoColeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmServicos.Designer.vb">
+      <DependentUpon>frmServicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmServicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistica\frmViagem.Designer.vb">
+      <DependentUpon>frmViagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistica\frmViagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmGerencialAgrupado.designer.vb">
+      <DependentUpon>frmGerencialAgrupado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmGerencialAgrupado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmGerencial.designer.vb">
+      <DependentUpon>frmGerencial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmGerencial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptBaixaCarrega.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBaixaCarrega.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptOrdemVendaP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptOrdemVendaP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptPesoReal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPesoReal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptReclama.vb">
+      <DependentUpon>RptReclama.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Relatorios\RptCheckPackingList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCheckPackingList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptConfirmCarregamento.vb">
+      <DependentUpon>RptConfirmCarregamento.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Relatorios\RptDimPraca.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDimPraca.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptEtiqPed1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEtiqPed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptGerencialEntrada1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptGerencialEntrada.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptPedGal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPedGal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptResumoCarregam.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptResumoCarregam.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptTotStatus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTotStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptViagemFech.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptViagemFech.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\wwwisc\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmCia.Designer.vb">
+      <DependentUpon>frmCia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmCia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmEtiquetaT.Designer.vb">
+      <DependentUpon>frmEtiquetaT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmEtiquetaT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmGera.Designer.vb">
+      <DependentUpon>frmGera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmGera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmImpDSN.Designer.vb">
+      <DependentUpon>frmImpDSN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmImpDSN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\frmFotos.Designer.vb">
+      <DependentUpon>frmFotos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\frmFotos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmModificacoes.designer.vb">
+      <DependentUpon>frmModificacoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmModificacoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmConferir.designer.vb">
+      <DependentUpon>frmConferir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmConferir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmImpressao.designer.vb">
+      <DependentUpon>frmImpressao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmImpressao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmConfTeorico.designer.vb">
+      <DependentUpon>frmConfTeorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmConfTeorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmConfDifPeso.designer.vb">
+      <DependentUpon>frmConfDifPeso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmConfDifPeso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmConferenciaPraca.designer.vb">
+      <DependentUpon>frmConferenciaPraca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmConferenciaPraca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmConsEtiq.designer.vb">
+      <DependentUpon>frmConsEtiq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmConsEtiq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmEspecItens.designer.vb">
+      <DependentUpon>frmEspecItens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmEspecItens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmDimensoesPraca.designer.vb">
+      <DependentUpon>frmDimensoesPraca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmDimensoesPraca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmEtiqsNaoEncontradas.designer.vb">
+      <DependentUpon>frmEtiqsNaoEncontradas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmEtiqsNaoEncontradas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmEtiqsPraca.designer.vb">
+      <DependentUpon>frmEtiqsPraca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmEtiqsPraca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmVolumesPedido.designer.vb">
+      <DependentUpon>frmVolumesPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmVolumesPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmPesoPecaEspec.designer.vb">
+      <DependentUpon>frmPesoPecaEspec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmPesoPecaEspec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmVolumesDimensao.designer.vb">
+      <DependentUpon>frmVolumesDimensao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmVolumesDimensao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Componentes\EstoqueF.designer.vb">
+      <DependentUpon>EstoqueF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\EstoqueF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmConsolEstoque.designer.vb">
+      <DependentUpon>frmConsolEstoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmConsolEstoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\frmOrdemItemSaldo.designer.vb">
+      <DependentUpon>frmOrdemItemSaldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\frmOrdemItemSaldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptEtiquetaSemPeso.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEtiquetaSemPeso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Temp\CodBarras.Designer.vb">
+      <DependentUpon>CodBarras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\CodBarras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmTeste.Designer.vb">
+      <DependentUpon>frmTeste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmTeste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmAvariasObs.Designer.vb">
+      <DependentUpon>frmAvariasObs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmAvariasObs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazem\frmArmaLayout.Designer.vb">
+      <DependentUpon>frmArmaLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem\frmArmaLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financeiro\frmBoleto.Designer.vb">
+      <DependentUpon>frmBoleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financeiro\frmBoleto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Local.vb">
+    </Compile>
+    <Compile Include="NFe.vb" />
+    <Compile Include="NFe\ChecarNF.designer.vb">
+      <DependentUpon>ChecarNF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NFe\ChecarNF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFe\frmVerXml.Designer.vb">
+      <DependentUpon>frmVerXml.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NFe\frmVerXml.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptCtca.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCtca.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptDanfeLand2.vb">
+      <DependentUpon>RptDanfeLand2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptDanfeLand.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDanfeLand.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptEmbalagem.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEmbalagem.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\RptEstoqueFisico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEstoqueFisico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptEtiqPedItem.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEtiqPedItem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptEtiqPraca.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEtiqPraca.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptEtiqQualidade.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEtiqQualidade.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptEtiqueta.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEtiqueta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NFe\Exporta.Designer.vb">
+      <DependentUpon>Exporta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NFe\Exporta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFe\Importa.Designer.vb">
+      <DependentUpon>Importa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NFe\Importa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\BoletoRelItau.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoletoRelItau.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptGerencial.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptGerencial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptGerencialAgrupado.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptGerencialAgrupado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptListaCIA.vb">
+      <DependentUpon>RptListaCIA.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptListaDepartam.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptListaDepartam.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptNFPorOV.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptNFPorOV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptNFSemItem.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptNFSemItem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptOrdemVenda.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptOrdemVenda.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptPedDet.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPedDet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptPedItemeProd.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPedItemeProd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptPedItemeProdObs.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPedItemeProdObs.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\RptProdEspec.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptProdEspec.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptProduto.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptProduto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptReldeNF.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptReldeNF.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptRelPorDimensao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptRelPorDimensao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptStatusEstoque.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptStatusEstoque.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptVendedor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptVendedor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RptViagemPorPedido.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptViagemPorPedido.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\www\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Sistema\frmConfigGlobal.Designer.vb">
+      <DependentUpon>frmConfigGlobal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\frmConfigGlobal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\frmAlerta.Designer.vb">
+      <DependentUpon>frmAlerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\frmAlerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\frmVerRestr.Designer.vb">
+      <DependentUpon>frmVerRestr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\frmVerRestr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Site\frmSiteConfig.Designer.vb">
+      <DependentUpon>frmSiteConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Site\frmSiteConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmCiaT.Designer.vb">
+      <DependentUpon>frmCiaT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmCiaT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Princ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Princ.Designer.vb">
+      <DependentUpon>Princ.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sistema\frmConfigUsuario.Designer.vb">
+      <DependentUpon>frmConfigUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\frmConfigUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmCriaDataset.Designer.vb">
+      <DependentUpon>frmCriaDataset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmCriaDataset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\frmGerUsuario.Designer.vb">
+      <DependentUpon>frmGerUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\frmGerUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\frmRel.Designer.vb">
+      <DependentUpon>frmRel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\frmRel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\frmRelImp.Designer.vb">
+      <DependentUpon>frmRelImp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\frmRelImp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmGeraReport.Designer.vb">
+      <DependentUpon>frmGeraReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmGeraReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmTestes.Designer.vb">
+      <DependentUpon>frmTestes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmTestes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\frmTrataImagens.Designer.vb">
+      <DependentUpon>frmTrataImagens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\frmTrataImagens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\TesteDiver.Designer.vb">
+      <DependentUpon>TesteDiver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\TesteDiver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\frmHistorico.Designer.vb">
+      <DependentUpon>frmHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\frmHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\frmImpCNAE.Designer.vb">
+      <DependentUpon>frmImpCNAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\frmImpCNAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ajuda\SobreSistema.resx">
+      <DependentUpon>SobreSistema.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmVolumesDimensaoNCM.resx">
+      <DependentUpon>frmVolumesDimensaoNCM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmCargaDataSets.resx">
+      <DependentUpon>frmCargaDataSets.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmPosicaoRocha.resx">
+      <DependentUpon>frmPosicaoRocha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmEstoqueAgrupado.resx">
+      <DependentUpon>frmEstoqueAgrupado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmPedidoViagem.resx">
+      <DependentUpon>frmPedidoViagem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmConfItemEmb.resx">
+      <DependentUpon>frmConfItemEmb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\frmEstoqueVendedor.resx">
+      <DependentUpon>frmEstoqueVendedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\frmVendedorPorCliente.resx">
+      <DependentUpon>frmVendedorPorCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\frmEstoqueEstat.resx">
+      <DependentUpon>frmEstoqueEstat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\frmEstoquePed.resx">
+      <DependentUpon>frmEstoquePed.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\frmEstoqueDina.resx">
+      <DependentUpon>frmEstoqueDina.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmDimensoesPorPecas.resx">
+      <DependentUpon>frmDimensoesPorPecas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmFracionar.resx">
+      <DependentUpon>frmFracionar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmGridEtiq.resx">
+      <DependentUpon>frmGridEtiq.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\frmOrdemVenda.resx">
+      <DependentUpon>frmOrdemVenda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\frmPesquisas.resx">
+      <DependentUpon>frmPesquisas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmCarregamentos.resx">
+      <DependentUpon>frmCarregamentos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmCarregaOrdem.resx">
+      <DependentUpon>frmCarregaOrdem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmMensagens.resx">
+      <DependentUpon>frmMensagens.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmPendencias.resx">
+      <DependentUpon>frmPendencias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmPontoColetaComViagem.resx">
+      <DependentUpon>frmPontoColetaComViagem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmResumoCarrega.resx">
+      <DependentUpon>frmResumoCarrega.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmEntregaCliente.resx">
+      <DependentUpon>frmEntregaCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmPontoColeta.resx">
+      <DependentUpon>frmPontoColeta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmServicos.resx">
+      <DependentUpon>frmServicos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistica\frmViagem.resx">
+      <DependentUpon>frmViagem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmGerencialAgrupado.resx">
+      <DependentUpon>frmGerencialAgrupado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmGerencial.resx">
+      <DependentUpon>frmGerencial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptBaixaCarrega.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBaixaCarrega.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptOrdemVendaP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOrdemVendaP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptPesoReal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPesoReal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptReclama.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptReclama.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptCheckPackingList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCheckPackingList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptConfirmCarregamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptConfirmCarregamento.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptDimPraca.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDimPraca.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEtiqPed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiqPed1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptGerencialEntrada.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGerencialEntrada1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptPedGal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPedGal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptResumoCarregam.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptResumoCarregam.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptTotStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTotStatus.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptViagemFech.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptViagemFech.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmCia.resx">
+      <DependentUpon>frmCia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmEtiquetaT.resx">
+      <DependentUpon>frmEtiquetaT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmGera.resx">
+      <DependentUpon>frmGera.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmImpDSN.resx">
+      <DependentUpon>frmImpDSN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\frmFotos.resx">
+      <DependentUpon>frmFotos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmModificacoes.resx">
+      <DependentUpon>frmModificacoes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmConferir.resx">
+      <DependentUpon>frmConferir.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmImpressao.resx">
+      <DependentUpon>frmImpressao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmConfTeorico.resx">
+      <DependentUpon>frmConfTeorico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmConfDifPeso.resx">
+      <DependentUpon>frmConfDifPeso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmConferenciaPraca.resx">
+      <DependentUpon>frmConferenciaPraca.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmConsEtiq.resx">
+      <DependentUpon>frmConsEtiq.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmEspecItens.resx">
+      <DependentUpon>frmEspecItens.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmDimensoesPraca.resx">
+      <DependentUpon>frmDimensoesPraca.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmEtiqsNaoEncontradas.resx">
+      <DependentUpon>frmEtiqsNaoEncontradas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmEtiqsPraca.resx">
+      <DependentUpon>frmEtiqsPraca.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmVolumesPedido.resx">
+      <DependentUpon>frmVolumesPedido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmPesoPecaEspec.resx">
+      <DependentUpon>frmPesoPecaEspec.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmVolumesDimensao.resx">
+      <DependentUpon>frmVolumesDimensao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\EstoqueF.resx">
+      <DependentUpon>EstoqueF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmConsolEstoque.resx">
+      <DependentUpon>frmConsolEstoque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\frmOrdemItemSaldo.resx">
+      <DependentUpon>frmOrdemItemSaldo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEtiquetaSemPeso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiquetaSemPeso.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\CodBarras.resx">
+      <DependentUpon>CodBarras.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmTeste.resx">
+      <DependentUpon>frmTeste.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmAvariasObs.resx">
+      <DependentUpon>frmAvariasObs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazem\frmArmaLayout.resx">
+      <DependentUpon>frmArmaLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financeiro\frmBoleto.resx">
+      <DependentUpon>frmBoleto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFe\ChecarNF.resx">
+      <DependentUpon>ChecarNF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFe\frmVerXml.resx">
+      <DependentUpon>frmVerXml.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptCtca.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCtca.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptDanfeLand2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDanfeLand2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptDanfeLand.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDanfeLand.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEmbalagem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEmbalagem.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEstoqueFisico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEstoqueFisico.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEtiqPedItem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiqPedItem.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEtiqPraca.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiqPraca.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEtiqQualidade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiqQualidade.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptEtiqueta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiqueta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFe\Exporta.resx">
+      <DependentUpon>Exporta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFe\Importa.resx">
+      <DependentUpon>Importa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\BoletoRelItau.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BoletoRelItau.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptGerencial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGerencial.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptGerencialAgrupado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGerencialAgrupado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptListaCIA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaCIA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptListaDepartam.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaDepartam.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptNFPorOV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptNFPorOV.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptNFSemItem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptNFSemItem.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptOrdemVenda.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOrdemVenda.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptPedDet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPedDet.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptPedItemeProd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPedItemeProd.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptPedItemeProdObs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPedItemeProdObs.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptProdEspec.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptProdEspec.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptProduto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptProduto.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptReldeNF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptReldeNF.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptRelPorDimensao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRelPorDimensao.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptStatusEstoque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptStatusEstoque.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptVendedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptVendedor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RptViagemPorPedido.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptViagemPorPedido.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\frmConfigGlobal.resx">
+      <DependentUpon>frmConfigGlobal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\frmAlerta.resx">
+      <DependentUpon>frmAlerta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\frmVerRestr.resx">
+      <DependentUpon>frmVerRestr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Site\frmSiteConfig.resx">
+      <DependentUpon>frmSiteConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmCiaT.resx">
+      <DependentUpon>frmCiaT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Princ.resx">
+      <DependentUpon>Princ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\frmConfigUsuario.resx">
+      <DependentUpon>frmConfigUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmCriaDataset.resx">
+      <DependentUpon>frmCriaDataset.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\frmGerUsuario.resx">
+      <DependentUpon>frmGerUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\frmRel.resx">
+      <DependentUpon>frmRel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\frmRelImp.resx">
+      <DependentUpon>frmRelImp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmGeraReport.resx">
+      <DependentUpon>frmGeraReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmTestes.resx">
+      <DependentUpon>frmTestes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\frmTrataImagens.resx">
+      <DependentUpon>frmTrataImagens.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\TesteDiver.resx">
+      <DependentUpon>TesteDiver.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\frmHistorico.resx">
+      <DependentUpon>frmHistorico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\frmImpCNAE.resx">
+      <DependentUpon>frmImpCNAE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Relatorios\DSListaCIA.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="Img\CLCAlertaG.PNG" />
+    <None Include="Img\CLCAlerta.gif" />
+    <None Include="Img\CLCAlertaG.gif" />
+    <None Include="bin\Debug\IconeAppCLC.ico" />
+    <Content Include="Icraft.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oracle.DataAccess.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Relatorios\BoletoRelItau.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSBaixaCarrega.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSCheckPackingList.xsd">
+      <LastGenOutput>DSCheckPackingList.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSCtca.xsd">
+      <LastGenOutput>DSCtca.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSDanfe.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSDimPraca.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSEmbalagem.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSEstoqueFisico.xsd">
+      <LastGenOutput>DSEstoqueFisico.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSEtiqPed.xsd">
+      <LastGenOutput>DSEtiqPed.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSEtiqPedItem.xsd">
+      <LastGenOutput>DSEtiqPedItem.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSEtiqPraca.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSEtiqQualidade.xsd">
+      <LastGenOutput>DSEtiqQualidade.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSEtiqueta.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSGerencial.xsd">
+      <LastGenOutput>DSGerencial.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSGerencialAgrupado.xsd">
+      <LastGenOutput>DSGerencialAgrupado1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSGerencialEntrada.xsd">
+      <LastGenOutput>DSGerencialEntrada.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSListaDepartam.xsd">
+      <LastGenOutput>DSListaDepartam.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSNFPorOV.xsd">
+      <LastGenOutput>DSNFPorOV.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSNFSemItem.xsd">
+      <LastGenOutput>DSNFSemItem.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSOrdemVenda.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSPedDet.xsd">
+      <LastGenOutput>DSPedDet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSPedGal.xsd">
+      <LastGenOutput>DSPedGal.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSPedItemeProd.xsd">
+      <LastGenOutput>DSPedItemeProd.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSPedItemeProdObs.xsd">
+      <LastGenOutput>DSPedItemeProdObs.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSPesoReal.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSProdEspec.xsd">
+      <LastGenOutput>DSProdEspec.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSProduto.xsd">
+      <LastGenOutput>DSProduto.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSReclama.xsd">
+      <LastGenOutput>DSReclama.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSReldeNF.xsd">
+      <LastGenOutput>DSReldeNF1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSRelPorDimensao.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSResumoCarregam.xsd">
+      <LastGenOutput>DSResumoCarregam.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSStatusEstoque.xsd">
+      <LastGenOutput>DSStatusEstoque.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSTotStatus.xsd">
+      <LastGenOutput>DSTotStatus.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSVendedor.xsd">
+      <LastGenOutput>DSVendedor.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSViagemFech.xsd">
+      <LastGenOutput>DSViagemFech.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Relatorios\DSViagemPorPedido.xsd">
+      <LastGenOutput>DSViagemPorPedido.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CLCIconePrep.jpg" />
+    <None Include="Resources\CLCFundo.png" />
+    <None Include="Resources\CLCInicio.png" />
+    <None Include="Resources\CLCApelo.png" />
+    <None Include="Resources\CLC64x64.ico" />
+    <Content Include="Resources\CLC32x32.ico" />
+    <None Include="Resources\CLC96x96.ico" />
+    <Content Include="Resources\CLCVersao.png" />
+    <Content Include="Resources\Tp01.jpg" />
+    <None Include="Service References\wwwisc\Consulta_V03.wsdl" />
+    <None Include="Service References\www\consulta_v03.disco" />
+    <None Include="Service References\www\consulta_v03.wsdl" />
+    <None Include="Service References\www\configuration91.svcinfo" />
+    <None Include="Service References\www\configuration.svcinfo" />
+    <None Include="Service References\www\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\wwwisc\Consulta_V03.disco" />
+    <None Include="Service References\wwwisc\configuration91.svcinfo" />
+    <None Include="Service References\wwwisc\configuration.svcinfo" />
+    <None Include="Service References\wwwisc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="System.Data.OracleClient.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="unzip.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zip.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic for Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Office.Interop.Excel.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Oracle.DataAccess">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Oracle.DataAccess.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\CLC32x32.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\CLCVersao.png">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\Tp01.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.OracleClient.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\wwwisc\" />
+    <WCFMetadataStorage Include="Service References\www\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataSetsNFE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

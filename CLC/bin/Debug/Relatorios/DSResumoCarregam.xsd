@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="NewDataSet" msprop:Generator_DataSetName="NewDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tabela" msprop:Generator_UserTableName="Tabela" msprop:Generator_RowDeletedName="TabelaRowDeleted" msprop:Generator_RowChangedName="TabelaRowChanged" msprop:Generator_RowClassName="TabelaRow" msprop:Generator_RowChangingName="TabelaRowChanging" msprop:Generator_RowEvArgName="TabelaRowChangeEvent" msprop:Generator_RowEvHandlerName="TabelaRowChangeEventHandler" msprop:Generator_TableClassName="TabelaDataTable" msprop:Generator_TableVarName="tableTabela" msprop:Generator_RowDeletingName="TabelaRowDeleting" msprop:Generator_TablePropName="Tabela">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VIAGEM_REF" msprop:Generator_UserColumnName="VIAGEM_REF" msprop:Generator_ColumnPropNameInRow="VIAGEM_REF" msprop:Generator_ColumnVarNameInTable="columnVIAGEM_REF" msprop:Generator_ColumnPropNameInTable="VIAGEM_REFColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORDEM_VENDA_REF" msprop:Generator_UserColumnName="ORDEM_VENDA_REF" msprop:Generator_ColumnPropNameInRow="ORDEM_VENDA_REF" msprop:Generator_ColumnVarNameInTable="columnORDEM_VENDA_REF" msprop:Generator_ColumnPropNameInTable="ORDEM_VENDA_REFColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUTO_COD" msprop:Generator_UserColumnName="PRODUTO_COD" msprop:Generator_ColumnPropNameInRow="PRODUTO_COD" msprop:Generator_ColumnVarNameInTable="columnPRODUTO_COD" msprop:Generator_ColumnPropNameInTable="PRODUTO_CODColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENTREGA_NOME" msprop:Generator_UserColumnName="ENTREGA_NOME" msprop:Generator_ColumnPropNameInRow="ENTREGA_NOME" msprop:Generator_ColumnVarNameInTable="columnENTREGA_NOME" msprop:Generator_ColumnPropNameInTable="ENTREGA_NOMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENTREGA_LOCAL" msprop:Generator_UserColumnName="ENTREGA_LOCAL" msprop:Generator_ColumnPropNameInRow="ENTREGA_LOCAL" msprop:Generator_ColumnVarNameInTable="columnENTREGA_LOCAL" msprop:Generator_ColumnPropNameInTable="ENTREGA_LOCALColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARREGA_ETA" msprop:Generator_UserColumnName="CARREGA_ETA" msprop:Generator_ColumnPropNameInRow="CARREGA_ETA" msprop:Generator_ColumnVarNameInTable="columnCARREGA_ETA" msprop:Generator_ColumnPropNameInTable="CARREGA_ETAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CARREGA_ETS" msprop:Generator_UserColumnName="CARREGA_ETS" msprop:Generator_ColumnPropNameInRow="CARREGA_ETS" msprop:Generator_ColumnVarNameInTable="columnCARREGA_ETS" msprop:Generator_ColumnPropNameInTable="CARREGA_ETSColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CARREGA_NOME" msprop:Generator_UserColumnName="CARREGA_NOME" msprop:Generator_ColumnPropNameInRow="CARREGA_NOME" msprop:Generator_ColumnVarNameInTable="columnCARREGA_NOME" msprop:Generator_ColumnPropNameInTable="CARREGA_NOMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARREGA_LOCAL" msprop:Generator_UserColumnName="CARREGA_LOCAL" msprop:Generator_ColumnPropNameInRow="CARREGA_LOCAL" msprop:Generator_ColumnVarNameInTable="columnCARREGA_LOCAL" msprop:Generator_ColumnPropNameInTable="CARREGA_LOCALColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENTREGA_ETA" msprop:Generator_UserColumnName="ENTREGA_ETA" msprop:Generator_ColumnPropNameInRow="ENTREGA_ETA" msprop:Generator_ColumnVarNameInTable="columnENTREGA_ETA" msprop:Generator_ColumnPropNameInTable="ENTREGA_ETAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ENTREGA_ETS" msprop:Generator_UserColumnName="ENTREGA_ETS" msprop:Generator_ColumnPropNameInRow="ENTREGA_ETS" msprop:Generator_ColumnVarNameInTable="columnENTREGA_ETS" msprop:Generator_ColumnPropNameInTable="ENTREGA_ETSColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STATUS_COD" msprop:Generator_UserColumnName="STATUS_COD" msprop:Generator_ColumnPropNameInRow="STATUS_COD" msprop:Generator_ColumnVarNameInTable="columnSTATUS_COD" msprop:Generator_ColumnPropNameInTable="STATUS_CODColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VEICULO_COD" msprop:Generator_UserColumnName="VEICULO_COD" msprop:Generator_ColumnPropNameInRow="VEICULO_COD" msprop:Generator_ColumnVarNameInTable="columnVEICULO_COD" msprop:Generator_ColumnPropNameInTable="VEICULO_CODColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALOR_FRETE" msprop:Generator_UserColumnName="VALOR_FRETE" msprop:Generator_ColumnPropNameInRow="VALOR_FRETE" msprop:Generator_ColumnVarNameInTable="columnVALOR_FRETE" msprop:Generator_ColumnPropNameInTable="VALOR_FRETEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_LOGOTIPO" msprop:Generator_UserColumnName="_LOGOTIPO" msprop:Generator_ColumnPropNameInRow="_LOGOTIPO" msprop:Generator_ColumnVarNameInTable="column_LOGOTIPO" msprop:Generator_ColumnPropNameInTable="_LOGOTIPOColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

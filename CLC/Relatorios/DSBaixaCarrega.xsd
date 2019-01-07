@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="NewDataSet" msprop:Generator_DataSetName="NewDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Consulta" msprop:Generator_UserTableName="Consulta" msprop:Generator_RowDeletedName="ConsultaRowDeleted" msprop:Generator_RowChangedName="ConsultaRowChanged" msprop:Generator_RowClassName="ConsultaRow" msprop:Generator_RowChangingName="ConsultaRowChanging" msprop:Generator_RowEvArgName="ConsultaRowChangeEvent" msprop:Generator_RowEvHandlerName="ConsultaRowChangeEventHandler" msprop:Generator_TableClassName="ConsultaDataTable" msprop:Generator_TableVarName="tableConsulta" msprop:Generator_RowDeletingName="ConsultaRowDeleting" msprop:Generator_TablePropName="Consulta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA_ENTREGA" msprop:Generator_UserColumnName="DATA_ENTREGA" msprop:Generator_ColumnPropNameInRow="DATA_ENTREGA" msprop:Generator_ColumnVarNameInTable="columnDATA_ENTREGA" msprop:Generator_ColumnPropNameInTable="DATA_ENTREGAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ENDERECO_ENTREGA" msprop:Generator_UserColumnName="ENDERECO_ENTREGA" msprop:Generator_ColumnPropNameInRow="ENDERECO_ENTREGA" msprop:Generator_ColumnVarNameInTable="columnENDERECO_ENTREGA" msprop:Generator_ColumnPropNameInTable="ENDERECO_ENTREGAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENDERECO_CARREGA" msprop:Generator_UserColumnName="ENDERECO_CARREGA" msprop:Generator_ColumnPropNameInRow="ENDERECO_CARREGA" msprop:Generator_ColumnVarNameInTable="columnENDERECO_CARREGA" msprop:Generator_ColumnPropNameInTable="ENDERECO_CARREGAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORDEM_VENDA" msprop:Generator_UserColumnName="ORDEM_VENDA" msprop:Generator_ColumnPropNameInRow="ORDEM_VENDA" msprop:Generator_ColumnVarNameInTable="columnORDEM_VENDA" msprop:Generator_ColumnPropNameInTable="ORDEM_VENDAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUTO" msprop:Generator_UserColumnName="PRODUTO" msprop:Generator_ColumnPropNameInRow="PRODUTO" msprop:Generator_ColumnVarNameInTable="columnPRODUTO" msprop:Generator_ColumnPropNameInTable="PRODUTOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VEICULO" msprop:Generator_UserColumnName="VEICULO" msprop:Generator_ColumnPropNameInRow="VEICULO" msprop:Generator_ColumnVarNameInTable="columnVEICULO" msprop:Generator_ColumnPropNameInTable="VEICULOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS" msprop:Generator_UserColumnName="STATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_LOGOTIPO" msprop:Generator_UserColumnName="_LOGOTIPO" msprop:Generator_ColumnPropNameInRow="_LOGOTIPO" msprop:Generator_ColumnVarNameInTable="column_LOGOTIPO" msprop:Generator_ColumnPropNameInTable="_LOGOTIPOColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="VIAGEM" msprop:Generator_UserColumnName="VIAGEM" msprop:Generator_ColumnPropNameInRow="VIAGEM" msprop:Generator_ColumnVarNameInTable="columnVIAGEM" msprop:Generator_ColumnPropNameInTable="VIAGEMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NF" msprop:Generator_UserColumnName="NF" msprop:Generator_ColumnPropNameInRow="NF" msprop:Generator_ColumnVarNameInTable="columnNF" msprop:Generator_ColumnPropNameInTable="NFColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

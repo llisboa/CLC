@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_NF">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CIA_COD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_IDE_CUF" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_CNF" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_NATOP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_IDE_INDPAG" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_MOD" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_SERIE" type="xs:int" />
+              <xs:element name="INFNFE_IDE_NNF" type="xs:int" />
+              <xs:element name="INFNFE_IDE_DEMI" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_DSAIENT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_TPNF" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_CMUNFG" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_TPIMP" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_TPEMIS" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_CDV" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_TPAMB" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_FINNFE" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_PROCEMI" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_IDE_VERPROC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_CNPJ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_XNOME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_XLGR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_NRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_XCPL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_XBAIRRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_CMUN" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_EMIT_XMUN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_UF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_CEP" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_EMIT_CPAIS" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_EMIT_XPAIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_EMIT_IE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_CNPJ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_XNOME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_XLGR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_NRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_CMUN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_XMUN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_UF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_CEP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_CPAIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_XPAIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_FONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DEST_IE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_TOTAL_VBC" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VICMS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VBCST" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VST" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VPROD" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_VFRETE" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VSEG" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VDESC" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VII" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VIPI" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VPIS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_VCOFINS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_VOUTRO" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_TOTAL_VNF" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_MODFRETE" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_TRANSP_QVOL" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_TRANSP_ESP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_PESOL" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_PESOB" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_INFADFISCO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_INFCPL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTNFE_INFPROT_TPAMB" type="xs:int" minOccurs="0" />
+              <xs:element name="PROTNFE_VERAPLIC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTNFE_INFPROT_CHNFE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTNFE_DHRECBTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTNFE_INFPROT_NPROT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTNFE_INFPROT_DIGVAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTNFE_INFPROT_CSTAT" type="xs:int" minOccurs="0" />
+              <xs:element name="PROTNFE_XMOTIVO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ARQUIVO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_IMPORTACAO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CANCNFE_INFCANC_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CANCNFE_INFCANC_TPAMB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CANCNFE_INFCANC_XSERV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CANCNFE_INFCANC_CHNFE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CANCNFE_INFCANC_NPROT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CANCNFE_INFCANC_XJUST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETCANCNFE_INFCANC_VERAPLIC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETCANCNFE_INFCANC_CSTAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETCANCNFE_INFCANC_XMOTIVO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETCANCNFE_INFCANC_CUF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETCANCNFE_INFCANC_CHNFE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETCANCNFE_INFCANC_DHRECBTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETCANCNFE_INFCANC_NPROT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGO" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="COD_BARRAS" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="INFNFE_DEST_BAIRRO" type="xs:string" minOccurs="0" />
+              <xs:element name="INF_ADCIONAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TB_NF_ITEM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NF_CIA_COD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_IDE_SERIE" type="xs:int" />
+              <xs:element name="INFNFE_IDE_NNF" type="xs:int" />
+              <xs:element name="SEQ" type="xs:int" />
+              <xs:element name="INFNFE_DET_CPROD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DET_CEAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DET_XPROD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DET_NCM" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_DET_CFOP" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_DET_UCOM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INFNFE_DET_QCOM" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VUNCOM" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VPROD" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_UTRIB" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_QTRIB" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VUNTRIB" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_ORIG" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_DET_CST" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_DET_MODBC" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VBC" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_PICMS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VICMS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_CENQ" type="xs:int" minOccurs="0" />
+              <xs:element name="INFNFE_DET_PIPI" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VIPI" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_PPIS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VPIS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_PCOFINS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_VCOFINS" type="xs:double" minOccurs="0" />
+              <xs:element name="INFNFE_DET_INFADPROD" type="xs:string" minOccurs="0" />
+              <xs:element name="INFNFE_DET_CEANTRIB" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//TB_NF" />
+      <xs:field xpath="CIA_COD" />
+      <xs:field xpath="INFNFE_IDE_SERIE" />
+      <xs:field xpath="INFNFE_IDE_NNF" />
+    </xs:unique>
+    <xs:unique name="TB_NF_ITEM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//TB_NF_ITEM" />
+      <xs:field xpath="NF_CIA_COD" />
+      <xs:field xpath="SEQ" />
+      <xs:field xpath="INFNFE_IDE_NNF" />
+      <xs:field xpath="INFNFE_IDE_SERIE" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="TB_NF_TB_NF_ITEM" msdata:parent="TB_NF" msdata:child="TB_NF_ITEM" msdata:parentkey="CIA_COD INFNFE_IDE_SERIE INFNFE_IDE_NNF" msdata:childkey="NF_CIA_COD INFNFE_IDE_SERIE INFNFE_IDE_NNF" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

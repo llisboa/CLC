@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BoletoRelItau" targetNamespace="http://tempuri.org/BoletoRelItau.xsd" xmlns:mstns="http://tempuri.org/BoletoRelItau.xsd" xmlns="http://tempuri.org/BoletoRelItau.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BoletoRelItau" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_BOLETORELITAU">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BANCO_LOGOTIPO" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="BANCO_NOME" type="xs:string" minOccurs="0" />
+              <xs:element name="BANCO_NUMERO_DAC" type="xs:string" minOccurs="0" />
+              <xs:element name="CEDENTE_NOME" type="xs:string" minOccurs="0" />
+              <xs:element name="CEDENTE_AG" type="xs:string" minOccurs="0" />
+              <xs:element name="CEDENTE_CONTA" type="xs:string" minOccurs="0" />
+              <xs:element name="VENCIMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="SACADO_NOME" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_VALOR" type="xs:string" minOccurs="0" />
+              <xs:element name="NOSSO_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="LOCAL_PAG" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_ESPEC" type="xs:string" minOccurs="0" />
+              <xs:element name="ACEITE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATA_PROCESS" type="xs:string" minOccurs="0" />
+              <xs:element name="USO_BANCO" type="xs:string" minOccurs="0" />
+              <xs:element name="CARTEIRA" type="xs:string" minOccurs="0" />
+              <xs:element name="QUANTIDADE" type="xs:string" minOccurs="0" />
+              <xs:element name="INSTRUCOES" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_BARRAS_IMG" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="LINHA_DIGITAVEL" type="xs:string" minOccurs="0" />
+              <xs:element name="SACADO_ESPEC" type="xs:string" minOccurs="0" />
+              <xs:element name="INSTRUCOES_SUP" type="xs:string" minOccurs="0" />
+              <xs:element name="ESPEC_MOEDA" type="xs:string" minOccurs="0" />
+              <xs:element name="CEDENTE_LOGO" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="COD_CLIENTE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

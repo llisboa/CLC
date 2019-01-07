@@ -1,0 +1,204 @@
+----------------------------------------------------------------------------------------
+Momento: 2014-09-09 ter 16:49:22
+Produto: Controle e Logística Comercial
+Aplicativo: C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\bin\Debug\CLC.exe
+Login na rede: DESENVWEB/Thiago.Donola
+
+Mensagem apresentada: (login no sistema: IM)
+
+Mensagem de erro:
+Login Incorreto. Logon incorreto. Usuário ou senha inválidos ou sessão expirada.
+
+Erro:
+   em CLC.Login.OK_Button_Click(Object sender, EventArgs e) na \\10.0.0.219\c$\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\Inicio\Login.vb:linha 8
+   em System.Windows.Forms.Control.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   em System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   em System.Windows.Forms.Control.WndProc(Message& m)
+   em System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   em System.Windows.Forms.Button.WndProc(Message& m)
+   em System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   em System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   em System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   em System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(ApplicationContext context)
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoApplicationModel()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(String[] commandLine)
+   em CLC.My.MyApplication.Main(String[] Args) na 17d14f5c-a337-4978-8281-53493378c1071.vb:linha 81
+
+
+----------------------------------------------------------------------------------------
+Momento: 2015-09-17 qui 14:56:06
+Produto: Controle e Logística Comercial
+Aplicativo: C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\bin\Debug\CLC.exe
+Login na rede: DESENVWEB/Silvio.Oliveira
+
+Mensagem apresentada: (login no sistema: IMRJ)
+
+Mensagem de erro:
+Login Incorreto. ORA-12154: TNS:não foi possível resolver o identificador de conexão especificado
+.
+
+Erro:
+   em CLC.Login.OK_Button_Click(Object sender, EventArgs e) na C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\Inicio\Login.vb:linha 8
+   em System.Windows.Forms.Control.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.PerformClick()
+   em System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.TextBoxBase.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   em System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   em System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(ApplicationContext context)
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoApplicationModel()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(String[] commandLine)
+   em CLC.My.MyApplication.Main(String[] Args) na 17d14f5c-a337-4978-8281-53493378c1071.vb:linha 81
+
+
+----------------------------------------------------------------------------------------
+Momento: 2015-09-17 qui 14:57:48
+Produto: Controle e Logística Comercial
+Aplicativo: C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\bin\Debug\CLC.exe
+Login na rede: DESENVWEB/Silvio.Oliveira
+
+Mensagem apresentada: (login no sistema: IMRJ)
+
+Mensagem de erro:
+Login Incorreto. ORA-12154: TNS:não foi possível resolver o identificador de conexão especificado
+.
+
+Erro:
+   em CLC.Login.OK_Button_Click(Object sender, EventArgs e) na C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\Inicio\Login.vb:linha 8
+   em System.Windows.Forms.Control.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.PerformClick()
+   em System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.TextBoxBase.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   em System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   em System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(ApplicationContext context)
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoApplicationModel()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(String[] commandLine)
+   em CLC.My.MyApplication.Main(String[] Args) na 17d14f5c-a337-4978-8281-53493378c1071.vb:linha 81
+
+
+----------------------------------------------------------------------------------------
+Momento: 2015-09-17 qui 14:58:55
+Produto: Controle e Logística Comercial
+Aplicativo: C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\bin\Debug\CLC.exe
+Login na rede: DESENVWEB/Silvio.Oliveira
+
+Mensagem apresentada: (login no sistema: IM)
+
+Mensagem de erro:
+Login Incorreto. ORA-12154: TNS:não foi possível resolver o identificador de conexão especificado
+.
+
+Erro:
+   em CLC.Login.OK_Button_Click(Object sender, EventArgs e) na C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\Inicio\Login.vb:linha 8
+   em System.Windows.Forms.Control.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.PerformClick()
+   em System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.TextBoxBase.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   em System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   em System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(ApplicationContext context)
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoApplicationModel()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(String[] commandLine)
+   em CLC.My.MyApplication.Main(String[] Args) na 17d14f5c-a337-4978-8281-53493378c1071.vb:linha 81
+
+
+----------------------------------------------------------------------------------------
+Momento: 2015-09-17 qui 15:00:00
+Produto: Controle e Logística Comercial
+Aplicativo: C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\bin\Debug\CLC.exe
+Login na rede: DESENVWEB/Silvio.Oliveira
+
+Mensagem apresentada: (login no sistema: SILVIO)
+
+Mensagem de erro:
+Login Incorreto. ORA-12154: TNS:não foi possível resolver o identificador de conexão especificado
+.
+
+Erro:
+   em CLC.Login.OK_Button_Click(Object sender, EventArgs e) na C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\Inicio\Login.vb:linha 8
+   em System.Windows.Forms.Control.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.PerformClick()
+   em System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   em System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   em System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(ApplicationContext context)
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoApplicationModel()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(String[] commandLine)
+   em CLC.My.MyApplication.Main(String[] Args) na 17d14f5c-a337-4978-8281-53493378c1071.vb:linha 81
+
+
+----------------------------------------------------------------------------------------
+Momento: 2015-09-17 qui 15:00:35
+Produto: Controle e Logística Comercial
+Aplicativo: C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\bin\Debug\CLC.exe
+Login na rede: DESENVWEB/Silvio.Oliveira
+
+Mensagem apresentada: (login no sistema: SILVIO)
+
+Mensagem de erro:
+Login Incorreto. ORA-12154: TNS:não foi possível resolver o identificador de conexão especificado
+.
+
+Erro:
+   em CLC.Login.OK_Button_Click(Object sender, EventArgs e) na C:\inetpub\wwwroot\Intercraft2012\DownPriv\_VBNet\CLC_V02.96\CLC\Inicio\Login.vb:linha 8
+   em System.Windows.Forms.Control.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.OnClick(EventArgs e)
+   em System.Windows.Forms.Button.PerformClick()
+   em System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   em System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   em System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   em System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(ApplicationContext context)
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoApplicationModel()
+   em Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(String[] commandLine)
+   em CLC.My.MyApplication.Main(String[] Args) na 17d14f5c-a337-4978-8281-53493378c1071.vb:linha 81
+
+

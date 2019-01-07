@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CLC
+</name>
+</assembly>
+<members>
+<member name="F:CLC.frmArmaLayout._GerFiltro">
+	<summary>
+ Declaração do GerFiltro.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CLC.frmArmaLayout.GerFiltro">
+	<summary>
+ Carrega o filtro na tela.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CLC.frmArmaLayout.ATUALIZA_GALPA">
+	<summary>
+ Função de atualização no layout do galpão.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CLC.frmArmaLayout.ATUALIZA_ARMA">
+	<summary>
+ Atualiza o número do armazém apresentado no layout.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CLC.frmArmaLayout.PASSO">
+	<summary>
+ Variável de contagem.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CLC.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:CLC.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:CLC.My.Resources.Resources.INFO_LICENCA">
+	<summary>
+  Looks up a localized string similar to Licença concedida à Intermesa Trading Ltda..
+</summary>
+</member><member name="P:CLC.My.Resources.Resources.INFO_OBJETIVOS">
+	<summary>
+  Looks up a localized string similar to Objetivos do Sistema:
+
+Colaborar com a venda oferencendo oportunidades de:
+
+1) controle de pedido,
+2) emissão de documentos para solicitação de fornecimento,
+3) particionamento deste pedido primário em inúmeras ordens de venda,
+4) o apoio à logística de distribuição e, 
+
+        finalmente,
+
+5) acompanhamento de obrigações financeiras..
+</summary>
+</member><member name="T:CLC.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

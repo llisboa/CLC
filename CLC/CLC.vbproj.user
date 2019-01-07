@@ -1,0 +1,24 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\PACOTE\CLC\|\\10.0.0.48\d%24\Inetpub\wwwroot\Intermesa2\Down\CLC\|HTTP://WWW2.INTERMESA.COM.BR/DOWN/CLC/|\\10.0.0.48\d%24\Inetpub\wwwroot\Intermesa\Down\CLC\|\\10.0.0.48\d%24\Inetpub\wwwroot\Intermesa\Down\</PublishUrlHistory>
+    <InstallUrlHistory>HTTP://WWW2.INTERMESA.COM.BR/DOWN/CLC/|\\10.0.0.48\d%24\Inetpub\wwwroot\Intermesa2\Down\CLC\</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>HTTP://WWW2.INTERMESA.COM.BR/DOWN/CLC/</UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <ReferencePath>C:\Program Files\Business Objects\Common\2.8\managed\C:\Program Files (x86)\Business Objects\Common\2.8\managed\</ReferencePath>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>true</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>true</EnableSQLServerDebugging>
+  </PropertyGroup>
+</Project>
