@@ -46,7 +46,7 @@ Public Class ChecarNF
     End Sub
 
     Private Sub btnManda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnManda.Click
-        EnviaEmail("suporte@icraft.com.br", txtEmail.Text, "Intermesa - Checagem de Notas Fiscais - Lista de Inexistência", lblCheck.Text)
+        EnviaEmail("lucianoicraft@gmail.com", txtEmail.Text, "Intermesa - Checagem de Notas Fiscais - Lista de Inexistência", lblCheck.Text)
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -55,6 +55,6 @@ Public Class ChecarNF
     End Sub
 
     Private Sub btnEnviar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEnviar.Click
-        'EnviaEmail("suporte@icraft.com.br", txtEmail.Text, "Intermesa - Checagem de Notas Fiscais - Lista de Inexistência", lblCheck)
+        'EnviaEmail("lucianoicraft@gmail.com", txtEmail.Text, "Intermesa - Checagem de Notas Fiscais - Lista de Inexistência", lblCheck)
     End Sub
 End Class
